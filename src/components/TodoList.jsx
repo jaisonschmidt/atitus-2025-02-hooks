@@ -23,10 +23,7 @@ export function TodoList() {
         <>
             <h1>Minhas tarefas</h1>
             <ul>
-                <li>Tarefa 1</li>
-                <li>Tarefa 2</li>
-                <li>Tarefa 3</li>
-                <li>Tarefa 4</li>
+                {tasks.map( (task) => <li key={task.id}>{task.title}</li> )}
             </ul>
         </>
     );
